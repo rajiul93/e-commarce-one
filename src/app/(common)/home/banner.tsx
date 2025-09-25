@@ -22,7 +22,7 @@ const BannerHome = () => {
   );
 
   return (
-    <section className="w-full  md:flex gap-4">
+    <section className="w-full  md:flex gap-4 px-4">
       <div className="md:w-2/3 rounded-lg">
         <Carousel
           plugins={[plugin.current]}         // ✅ ref এর instance use করো
@@ -67,7 +67,7 @@ const BannerHome = () => {
         </Carousel>
       </div>
 
-      <div className="md:w-1/3 rounded-lg overflow-hidden">
+      <div className="mt-4 md:w-1/3 rounded-lg overflow-hidden">
         <div className="relative w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[460px]">
           <Image
             src="https://via.placeholder.com/800x600?text=Side+Promo"

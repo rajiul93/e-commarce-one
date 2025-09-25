@@ -5,7 +5,7 @@ import SignInSignUp from "./sign_in_sign_up";
 
 export const MobileNav = () => {
   return (
-    <div className="md:hidden flex bg-white items-center justify-around fixed bottom-0 w-full h-14">
+    <div className="md:hidden z-50 flex bg-white items-center justify-around fixed bottom-0 w-full h-14">
 
       <Location />
       <HiHome className="text-2xl"/>
