@@ -1,18 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 text-gray-600 py-6 px-4 md:px-8 lg:px-12">
+    <footer className="bg-gray-50 text-gray-600 py-6 mt-6 px-4 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 text-sm">
         {/* Column 1: Services */}
         <div>
           <h3 className="font-semibold text-indigo-600 mb-2">24/7 Amazing Services</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-indigo-700">Free in-store pick up</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Free Shipping</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Flexible Payment</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Convenient help</a></li>
+            <li><Link href="#" className="hover:text-indigo-700">Free in-store pick up</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Free Shipping</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Flexible Payment</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Convenient help</Link></li>
           </ul>
         </div>
 
@@ -20,15 +21,15 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2">About Emox</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-indigo-700">Company Info</a></li>
-            <li><a href="#" className="hover:text-indigo-700">News</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Investors</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Careers</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Diversity & Inclusion</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Advertise with us</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Policies</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Verified Rights Owner (VeRO) Program</a></li>
-            <li><a href="#" className="hover:text-indigo-700">eCILicenses</a></li>
+            <li><Link href="#" className="hover:text-indigo-700">Company Info</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">News</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Investors</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Careers</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Diversity & Inclusion</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Advertise with us</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Policies</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Verified Rights Owner (VeRO) Program</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">eCILicenses</Link></li>
           </ul>
         </div>
 
@@ -36,13 +37,13 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2">Order & Purchases</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-indigo-700">Check order status</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Shipping, Delivery & Pickup</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Returns & Exchanges</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Price Match Guarantee</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Product Recalls</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Trade In Program</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Gift Cards</a></li>
+            <li><Link href="#" className="hover:text-indigo-700">Check order status</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Shipping, Delivery & Pickup</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Returns & Exchanges</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Price Match Guarantee</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Product Recalls</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Trade In Program</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Gift Cards</Link></li>
           </ul>
         </div>
 
@@ -50,13 +51,13 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2">Popular Categories</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-indigo-700">Check order status</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Shipping, Delivery & Pickup</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Returns & Exchanges</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Price Match Guarantee</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Product Recalls</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Trade In Program</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Gift Cards</a></li>
+            <li><Link href="#" className="hover:text-indigo-700">Check order status</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Shipping, Delivery & Pickup</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Returns & Exchanges</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Price Match Guarantee</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Product Recalls</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Trade In Program</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Gift Cards</Link></li>
           </ul>
         </div>
 
@@ -64,10 +65,10 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2">Support & Services</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-indigo-700">Seller Center</a></li>
-            <li><a href="#" className="hover:text-indigo-700">Contact Us</a></li>
-            <li><a href="#" className="hover:text-indigo-700">eBay Returns</a></li>
-            <li><a href="#" className="hover:text-indigo-700">eBay Money Back Guarantee</a></li>
+            <li><Link href="#" className="hover:text-indigo-700">Seller Center</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">Contact Us</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">eBay Returns</Link></li>
+            <li><Link href="#" className="hover:text-indigo-700">eBay Money Back Guarantee</Link></li>
           </ul>
           <div className="mt-4">
             <span className="inline-flex items-center">
@@ -84,18 +85,18 @@ const Footer = () => {
             </span>
           </div>
           <div className="mt-4 flex space-x-4">
-            <a href="#" aria-label="Facebook">
+            <Link href="#" aria-label="Facebook">
               <Image src="https://via.placeholder.com/24" alt="Facebook" width={24} height={24} className="hover:opacity-75" />
-            </a>
-            <a href="#" aria-label="X">
+            </Link>
+            <Link href="#" aria-label="X">
               <Image src="https://via.placeholder.com/24" alt="X" width={24} height={24} className="hover:opacity-75" />
-            </a>
-            <a href="#" aria-label="Instagram">
+            </Link>
+            <Link href="#" aria-label="Instagram">
               <Image src="https://via.placeholder.com/24" alt="Instagram" width={24} height={24} className="hover:opacity-75" />
-            </a>
-            <a href="#" aria-label="LinkedIn">
+            </Link>
+            <Link href="#" aria-label="LinkedIn">
               <Image src="https://via.placeholder.com/24" alt="LinkedIn" width={24} height={24} className="hover:opacity-75" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

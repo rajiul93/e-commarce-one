@@ -12,8 +12,7 @@ import {
 import React from "react";
 import Image from "next/image";
 
-const BannerHome = () => {
-  // ✅ শুধু একবারই plugin বানাও
+const BannerHome = () => { 
   const plugin = React.useRef(
     Autoplay({
       delay: 2000,
@@ -22,7 +21,7 @@ const BannerHome = () => {
   );
 
   return (
-    <section className="w-full  md:flex gap-4 px-4">
+    <section className="w-full  md:flex gap-4 px-4 lg:px-0 mt-2  ">
       <div className="md:w-2/3 rounded-lg">
         <Carousel
           plugins={[plugin.current]}         // ✅ ref এর instance use করো
@@ -67,7 +66,7 @@ const BannerHome = () => {
         </Carousel>
       </div>
 
-      <div className="mt-4 md:w-1/3 rounded-lg overflow-hidden">
+      <div className="mt-4 md:mt-0 md:w-1/3 rounded-lg overflow-hidden">
         <div className="relative w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[460px]">
           <Image
             src="https://via.placeholder.com/800x600?text=Side+Promo"

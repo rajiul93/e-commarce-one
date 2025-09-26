@@ -22,28 +22,28 @@ const CategorySlider = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4    mt-2 md:mt-4 lg:mt-6 lg:px-0 ">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-gray-800">Explore Popular Categories</h2>
-        <a href="#" className="text-indigo-600 hover:text-indigo-800 text-sm">View All</a>
+        <a href="#" className="text-primary hover:text-primary/80 text-sm">View All</a>
       </div>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
+        spaceBetween={10}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpoints={{
-          340: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-          1280: { slidesPerView: 6 },
+          340: { slidesPerView: 3 },
+          768: { slidesPerView: 5 },
+          1024: { slidesPerView: 7 },
+          1280: { slidesPerView: 8 },
         }}
         className="category-swiper pb-10"
       >
         {categories.map((category, index) => (
           <SwiperSlide key={index} className="text-center">
-            <div className="flex flex-col h-40 items-center">
+            <div className="flex flex-col h-36 items-center">
               <div className="w-24 h-24 bg-gray-200 rounded-full overflow-hidden relative">
                 <Image
                   src={category.image}
@@ -61,7 +61,7 @@ const CategorySlider = () => {
       <style jsx>{`
         /* Move pagination bullets further down for this slider only */
         .category-swiper :global(.swiper-pagination) {
-          bottom: -12px;
+          bottom: 0 !important;
         }
       `}</style>
     </div>
