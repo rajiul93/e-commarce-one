@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
+const PromoCards = React.memo(() => {
   const cards = [
     {
       title: "Fresh and Healthy Vegetable",
@@ -64,6 +65,8 @@ import { Card } from "@/components/ui/card";
       </div>
     </div>
   );
-};
+});
+
+PromoCards.displayName = 'PromoCards';
 
 export default PromoCards;

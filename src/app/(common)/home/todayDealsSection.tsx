@@ -17,7 +17,7 @@ interface TodayDealsSectionProps {
   products: Deal[];
 }
 
-const TodayDealsSection: React.FC<TodayDealsSectionProps> = ({ title, products }) => {
+const TodayDealsSection: React.FC<TodayDealsSectionProps> = React.memo(({ title, products }) => {
   return (
     <div className="container mx-auto px-4 lg:px-0  mt-2 md:mt-4 lg:mt-6 ">
       <div className="flex justify-between items-center mb-4">
@@ -70,6 +70,8 @@ const TodayDealsSection: React.FC<TodayDealsSectionProps> = ({ title, products }
       </div>
     </div>
   );
-};
+});
+
+TodayDealsSection.displayName = 'TodayDealsSection';
 
 export default TodayDealsSection;

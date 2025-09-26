@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Mona_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -19,11 +19,15 @@ const monaSans = Mona_Sans({
 export const metadata: Metadata = {
   title: "E-commerce Store",
   description: "Your premium e-commerce destination for quality products and amazing deals",
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   other: {
     'preconnect': 'https://via.placeholder.com',
   }
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

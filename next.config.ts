@@ -11,7 +11,7 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
   },
   experimental: {
-    optimizeCss: true,
+    // Removed optimizeCss: true - requires critters module
     optimizePackageImports: ['react-icons', 'lucide-react'],
   },
   headers: async () => [

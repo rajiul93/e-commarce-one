@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "analyze": "ANALYZE=true next build",
+    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html",
+    "build:analyze": "npm run build && npm run analyze"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
