@@ -25,7 +25,7 @@ const CategorySlider = () => {
     <div className="container mx-auto px-4    mt-2 md:mt-4 lg:mt-6 lg:px-0 ">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-gray-800">Explore Popular Categories</h2>
-        <a href="#" className="text-primary hover:text-primary/80 text-sm">View All</a>
+        {/* <a href="#" className="text-primary hover:text-primary/80 text-sm">View All</a> */}
       </div>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}

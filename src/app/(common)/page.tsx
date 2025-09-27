@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import SecondHeader from "@/components/ui/modiule/second-headeer/second_header";
-import BannerHome from "./home/banner";
-import { deals } from "@/data/deals";
+import BannerHome from "./home/banner"; 
+import { products } from "@/data/products";
 
 // Dynamic imports for heavy components
 const CategorySlider = dynamic(() => import("./home/categorySlider"), {
@@ -23,10 +23,10 @@ export default function Home() {
       <SecondHeader />
       <BannerHome />
       <CategorySlider />
-      <TodayDealsSection products={deals} title="Today Best Deals For Yuou!"/>
+      <TodayDealsSection  category="best-deals" products={products} title="Today Best Deals For Yuou!"/>
       <PromoCards/>
-      <TodayDealsSection products={deals} title="60% Off Or more On Winter-wear"/>
-      <TodayDealsSection products={deals} title="Best Sellers In Beauty & Healts"/>
+      <TodayDealsSection category="offer"  products={products} title="60% Off Or more On Winter-wear"/>
+      <TodayDealsSection  category="beauty-healts" products={products} title="Best Sellers In Beauty & Healts"/>
     </section>
   );
 }
